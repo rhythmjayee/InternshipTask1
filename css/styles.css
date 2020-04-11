@@ -1,9 +1,15 @@
 body, html {
     height: 100%;
 }
+/* form{
+    margin: 0 auto;
+    text-align: center;
+} */
 #NavForm{
     border-radius: 30px 30px 30px 30px;
-    width: 300px;
+    width: 500px;
+    /* align-items: center; */
+    /* justify-self: center; */
     
     
 }
@@ -25,33 +31,65 @@ input { font-family: 'FontAwesome'; } /* This is for the placeholder */
     content: "\f007";
 }
 .navbar-form{
-   margin-left: 20%;
-   /* margin-right: 10%; */
+   margin-left: 30%;
+   margin-right: 10%;
 }
 .header-Img {
-    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/headerimg.jpg");
-  
-    /* Set a specific height */
-    height: 30%;
-  
-    /* Position and center the image to scale nicely on all screens */
+    height: 50%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 
   }
-  
-  /* Place text in the middle of the image */
   .header-text {
-    /* text-align: center;  */
-    
-     top: 60%;
+     top: 80%;
     left:40%; 
-    
-
     position: absolute;
     transform: translate(-50%, -50%);
     color: white;
   }
+  header{
+      margin-bottom: 30px;;
+  }
+.nav{
+    display:flex;
+    
+   
+}
+ul li a{
+    color: gray;
+}
+.active{
+    color: black;
+    border-bottom:1px solid black;
+}
+ .row-content{
+     max-width: 0 auto;
+     padding-left: 50px 0px 0px 50px;
+ }
+ #xsNav{
+     text-align: right;
+     float: right;
+ }
+ .thumbnail {
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5); */
+    /* transition: 0.3s; */
+    min-width: 40%;
+    border-radius: 5px;
+  }
+ 
+  .thumbnail-description {
+    min-height: 40px;
+  }
+ 
+  /* .thumbnail:hover {
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 1);
+  } */
+  /* .thumbnail {
+    width: 100%;
+    height: 200px;
+   } */

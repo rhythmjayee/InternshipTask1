@@ -28,15 +28,15 @@
       
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-             
-            </ul>
-            <form class="navbar-form navbar-left">
+            
+            <div class="d-flex justify-content-center">
+            <form class="navbar-form navbar-left ">
               <!-- <div class="form-group"> -->
-                <input type="text" class="form-control" id="NavForm" placeholder=" &#xf002; Search for your best groups in ATG">
+                <input type="text" class="form-control" id="NavForm" placeholder=" &#xf002; Search for your favourite groups in ATG">
               <!-- </div> -->
               <!-- <button type="submit" class="btn btn-default">Submit</button> -->
             </form>
+          </div>
             <ul class="nav navbar-nav navbar-right">
               <!-- <li><a href="#"></a></li> -->
                 <li class="dropdown">
@@ -55,6 +55,60 @@
         </div>
         <!-- <img src="img/headerimg.jpg" class="img-responsive"> -->
       </header>
+
+      <div class="container">
+        <div class="row row-content">
+          <div class="col-12 visible-xs">
+            <ul class="nav">
+              <li class="nav-item">
+                <a class="nav-link "style="color:black;" href="#"> Posts(32)</a>
+              </li>
+              <li class="nav-item" >
+                <button type="button" id="xsNav" class="dropdown-toggle nav-link btn btn-default ml-auto "  data-toggle="dropdown" href="#"  aria-haspopup="true" aria-expanded="false">
+                  Filter all <span class="caret"></span>
+                </button>
+              </li>           
+            </ul>
+          </div>
+          <div class="hidden-xs col-sm-8" id="row1">
+            <!-- <nav class="nav"> -->
+              <ul class="nav">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">All Posts(32)</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Articles</a>
+                </li> 
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Events</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Education</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Jobs</a>
+                </li>
+                             
+              </ul>
+          </div>
+              <div class="hidden-xs col-sm-4">
+                    <button type="button" class="dropdown-toggle nav-link btn btn-default "  data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                      Write a Post <span class="caret"></span>
+                    </button>
+                    <button type="button" class="nav-link btn btn-primary"  href="#">Join Groups</button>
+              </div>
+           
+          </div>
+          <hr>
+          <div class="row row-content">
+            <div class="col-12 col-sm-8">
+            
+            </div>
+          </div>
+          
+        </div>
+       
+      </div>
 
 
 
