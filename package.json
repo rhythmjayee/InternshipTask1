@@ -1,0 +1,19 @@
+{
+  "name": "internshiptask1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rhythmjayee/InternshipTask1.git"
+  },
+  "author": "rhythmjayee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rhythmjayee/InternshipTask1/issues"
+  },
+  "homepage": "https://github.com/rhythmjayee/InternshipTask1#readme"
+}
