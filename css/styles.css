@@ -65,4 +65,9 @@ input { font-family: 'FontAwesome' } /* This is for the placeholder */
     color: black;
     border-bottom:1px solid black;
 }
- 
+#sideForm{
+    border: none;
+border-color: transparent;
+border-bottom: 1px solid grey;
+width: 15em;
+}
