@@ -48,7 +48,7 @@ input { font-family: 'FontAwesome' } /* This is for the placeholder */
 
   }
   .header-text {
-     top: 80%;
+     top: 75%;
     left:40%; 
     position: absolute;
     transform: translate(-50%, -50%);
