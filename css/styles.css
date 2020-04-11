@@ -21,7 +21,7 @@ body, html {
     position: relative; 
 }
 
-input { font-family: 'FontAwesome'; } /* This is for the placeholder */
+input { font-family: 'FontAwesome' } /* This is for the placeholder */
 
 .wrapper:before {
     font-family: 'FontAwesome';
