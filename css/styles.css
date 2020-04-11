@@ -1,10 +1,57 @@
+body, html {
+    height: 100%;
+}
 #NavForm{
     border-radius: 30px 30px 30px 30px;
     width: 300px;
     
     
 }
+.navbar{
+    margin-bottom: 0;
+    border: 0;
+}
+.wrapper input[type="text"] {
+    position: relative; 
+}
+
+input { font-family: 'FontAwesome'; } /* This is for the placeholder */
+
+.wrapper:before {
+    font-family: 'FontAwesome';
+    color:red;
+    position: relative;
+    left: -5px;
+    content: "\f007";
+}
 .navbar-form{
    margin-left: 20%;
    /* margin-right: 10%; */
 }
+.header-Img {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/headerimg.jpg");
+  
+    /* Set a specific height */
+    height: 30%;
+  
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+  }
+  
+  /* Place text in the middle of the image */
+  .header-text {
+    /* text-align: center;  */
+    
+     top: 60%;
+    left:40%; 
+    
+
+    position: absolute;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
