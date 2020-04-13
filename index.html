@@ -16,6 +16,115 @@
 </head>
 
 <body>
+
+  <div class="modal fade" id="modal1" tabindex="-1" role="dialog"  aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="row">
+            <div class=" ml-3 col-1">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="col-8 ">
+              <h5 class="modal-title">Event Type</h5>
+            </div>
+          </div>
+         </div>
+        <div class="modal-body ">
+          <div class="row">
+            <div class="col-12 mb-2">
+              <h6>Paid-event or Free-event?</h6>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col-6">
+              <div class="card" style="width: 10rem;">
+                <div class="card-body">
+                 
+                <div class="row">
+                  <div class="col-8">
+                    <div class="row">
+                      <div class="col-4 ml-3">
+                        <i class="fa fa-money"></i>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-10 ml-2">
+                        <h6>PAID</h6>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="col-1">
+                    <input class="form-check-input text-primary" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                  </div>
+
+                  </div>  
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="card" style="width: 10rem;">
+                <div class="card-body">
+                 
+                <div class="row">
+                  <div class="col-8">
+                    <div class="row">
+                      <div class="col-4 ml-3">
+                        <i class="fa fa-money"></i>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-10 ml-2">
+                        <h6>FREE</h6>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="col-1">
+                    <input class="form-check-input text-primary" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                  </div>
+
+                  </div>  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+          <button type="button" class="btn btn-primary"> Next &nbsp;<i class="fa fa-arrow-right">&nbsp;</i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   <div class="d-block d-md-none" style=" background-color:#F8F9FA; height:30px">
     <div class="d-flex mr-auto justify-content-end ">
       <i class="fa fa-circle fa-lg mt-2 mr-2"></i>
@@ -537,6 +646,14 @@
       <p class="text-primary"><a href="#">see more..</a></p>
     </div>
 
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-12">
+    <button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal1">
+      Cost Button
+    </button>
   </div>
 </div>
 

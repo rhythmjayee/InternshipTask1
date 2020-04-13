@@ -118,3 +118,7 @@ width: 18em;
   border-radius: 10px 10px 10px 10px;
   border:1px solid gray;
 }
+.modal-body{
+  padding: 30px 30px 30px 30px;
+  margin-left: 50px;
+}
