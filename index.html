@@ -106,7 +106,270 @@
 
 
 
+  <div class="modal fade" id="modal2" tabindex="-1" role="dialog"  aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="row">
+            <div class=" ml-3 col-1">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="col-8 ">
+              <h5 class="modal-title">Paid Event</h5>
+            </div>
+          </div>
+         </div>
+        <div class="modal-body ">
+          <div class="row">
+            <div class="col-12 mb-2">
+              <h6>Single-cost event or multiple-cost event? &nbsp;<i class="fa fa-info " id="paidEventToolTip" data-toggle="tooltip" data-placement="top" title="this is a tooltip" ></i></h6>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col-6">
+              <div class="card" style="width: 10rem;">
+                <div class="card-body">
+                 
+                <div class="row">
+                  <div class="col-8">
+                    <div class="row">
+                      <div class="col-4 ml-3">
+                        <i class="fa fa-ticket"></i>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12">
+                        <h6>SINGLE COST</h6>
+                      </div>
+                    </div>
 
+                  </div>
+
+                  <div class="col-1">
+                    <input class="form-check-input text-primary" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                  </div>
+
+                  </div>  
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="card" style="width: 10rem;">
+                <div class="card-body">
+                 
+                <div class="row">
+                  <div class="col-8">
+                    <div class="row">
+                      <div class="col-4 ml-3">
+                        <i class="fa fa-ticket"></i>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 ">
+                        <h6>MULTIPLE COST</h6>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="col-1">
+                    <input class="form-check-input text-primary" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                  </div>
+
+                  </div>  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+          <button type="button" class="btn btn-primary"> Next &nbsp;<i class="fa fa-arrow-right">&nbsp;</i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="modal fade" id="modal3" tabindex="-1" role="dialog"  aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="row">
+            <div class=" col-1 ml-3 ">
+              <button type="button" class="btn btn-light close" data-toggle="modal" data-target="#modal2" data-dismiss="modal">
+                <i class="fa fa-arrow-left"></i>
+              </button>
+            </div>
+            <div class="col-9  ">
+              <h5 class="modal-title">Price & Availability</h5>
+            </div>
+          </div>
+         </div>
+        <div class="modal-body ">
+          <form class="needs-validation" novalidate>
+            <div class="form-row">
+              <div class="col-12">
+                <label for="validationprice">Price of ticket?</label>
+                <input type="text" class="form-control" style="width: 200px;" id="validationprice" placeholder="Price per ticket"  required>
+               </div> 
+              </div>
+              <div class="form-row mt-4">
+                <div class="col-6">
+                  <h6>Availability?</h6>
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadioInline1">Online</label>
+                  </div>
+                </div>
+                <div class="col-6 mt-4">
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadioInline2">Offline</label>
+                  </div>
+                </div>
+              </div>
+            
+             
+          </form>
+            
+          
+        </div>
+        <div class="modal-footer">
+          <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+          <button type="submit" class="btn btn-success"  data-dismiss="modal">Done &nbsp;<i class="fa fa-thumbs-up">&nbsp;</i></button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="modal fade" id="modal4" tabindex="-1" role="dialog"  aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="row">
+            <div class="col-7 d-flex justify-content-start mr-auto">
+              <div class="row">
+                <div class=" col-1 ml-4">
+                  <button type="button" class="btn btn-light  close" data-toggle="modal" data-target="#modal2" data-dismiss="modal">
+                    <i class="fa fa-arrow-left"></i>
+                  </button>
+                </div>
+                <div class="col-9 ">
+                  <h5 class="modal-title font-weight-bold">Multiple Ticket</h5>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-5 ml-auto d-flex justify-content-end"  >
+              <button class="btn btn-outline-primary"><i class="fa fa-plus"></i> Category</button>
+            </div>
+          </div>
+         </div>
+        <div class="modal-body  ">
+
+        <!-- <div class="row">
+          <div class="col-10">
+            <div id="accordion">
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h5 class="mb-0">
+                    
+                  </h5>
+                </div>
+          </div>
+        </div>
+          </div>
+          <div class="col-1">
+            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <i class="fa fa-arrow-down"></i>
+            </button>
+          </div>
+            </div> -->
+            <div>
+              <ol>
+                <li class="mt-5">
+                  <!-- <div class="row">
+                    <div class="col-12">
+                      <p class="font-weight-bold">1</p>
+                    </div>
+                  </div> -->
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="card" style="width:20em;">
+                        <div class="card-body">
+  
+                          <form class="needs-validation" novalidate>
+                           
+                            <div class="form-group">
+                              <label for="Category">Category?</label>
+                              <input type="text" class="form-control" id="Category"  placeholder="Example:Entry,food etc">
+                              <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                            </div>
+                            <div class="form-group">
+                              <label for="Description">Description</label>
+                              <input type="text" class="form-control" id="Description" placeholder="Description">
+                            </div>
+                              <div class="form-group">
+                                <!-- <div class="col-12"> -->
+                                  <label for="validationprice">Price of ticket?</label>
+                                  <input type="text" class="form-control" style="width: 200px;" id="validationprice" placeholder="Price per ticket"  required>
+                                 <!-- </div>  -->
+                                </div>
+                            </form>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </li>
+              </ol>
+            </div>
+            
+
+
+
+        
+          </div>
+
+        <div class="modal-footer">
+          <div class="d-flex ustify-content-start mr-auto">
+            <h6>Total Cost: </h6> &nbsp;<span> 0</span>
+          </div>
+          
+         <!-- <div class="row">
+           <div class="col-6 d-inline-block justify-content-start">
+           <div class="row">
+             <div class="col-4">
+              <h6 class="font-weight-bold">Total Cost:</h6><span>0</span>
+             </div>
+           </div>
+          </div>
+          <div class="col-6 ">
+            <div class="row">
+              <div class="col-12">
+               <button type="submit" class="btn btn-success close">Done &nbsp;<i class="fa fa-thumbs-up">&nbsp;</i></button>
+              </div>
+            </div>
+          
+          </div>
+           </div> -->
+           <button type="submit" class="btn btn-success "  data-dismiss="modal">Done &nbsp;<i class="fa fa-thumbs-up">&nbsp;</i></button>
+         </div>
+         
+          
+        </div>
+      </div>
+    </div>
+  </div>
   
 
 
@@ -651,7 +914,7 @@
 
 <div class="row">
   <div class="col-12">
-    <button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal1">
+    <button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal4">
       Cost Button
     </button>
   </div>
@@ -731,6 +994,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
 
 
 </body>
