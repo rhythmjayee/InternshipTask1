@@ -20,3 +20,22 @@ $(function () {
       });
     }, false);
   })();
+
+
+  $('#paid').on('click',function(){
+    $('#next').removeAttr("disabled");
+    $('#next').attr({
+      'data-toggle':"modal" ,
+      'data-target':"#modal2",
+      'data-dismiss':"modal"
+    });
+  });
+
+  $('#free').on('click',function(){
+    $('#next').removeAttr("disabled");
+    $('#next').attr({
+      'data-toggle':"modal" ,
+      'data-target':"#modal2",
+      'data-dismiss':"modal"
+    });
+  });

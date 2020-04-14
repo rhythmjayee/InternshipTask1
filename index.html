@@ -38,67 +38,44 @@
               <h6>Paid-event or Free-event?</h6>
             </div>
           </div>
-          
-          <div class="row">
-            <div class="col-6">
+      
+
+         <div class="container">
+           <div class="row">
+             <div class="col-6 ">
+              
               <div class="card" style="width: 10rem;">
                 <div class="card-body">
-                 
-                <div class="row">
-                  <div class="col-8">
-                    <div class="row">
-                      <div class="col-4 ml-3">
-                        <i class="fa fa-money"></i>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-10 ml-2">
-                        <h6>PAID</h6>
-                      </div>
-                    </div>
-
+                  <h5 class="card-title"> <i class="fa fa-money"></i></h5>
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <!-- <i class="fa fa-money"></i> -->
+                    <input type="radio" id="paid" name="customRadioInline1" class="custom-control-input">
+                    <label class="custom-control-label" for="paid">PAID</label>
                   </div>
-
-                  <div class="col-1">
-                    <input class="form-check-input text-primary" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                  </div>
-
-                  </div>  
-                </div>
+                 </div>
               </div>
-            </div>
-            <div class="col-6">
+
+              
+             </div>
+             <div class="col-6 " >
               <div class="card" style="width: 10rem;">
                 <div class="card-body">
-                 
-                <div class="row">
-                  <div class="col-8">
-                    <div class="row">
-                      <div class="col-4 ml-3">
-                        <i class="fa fa-money"></i>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-10 ml-2">
-                        <h6>FREE</h6>
-                      </div>
-                    </div>
-
+                  <h5 class="card-title"> <i class="fa fa-money"></i></h5>
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="free" name="customRadioInline1" class="custom-control-input">
+                    <label class="custom-control-label" for="free">FREE</label>
                   </div>
-
-                  <div class="col-1">
-                    <input class="form-check-input text-primary" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                  </div>
-
-                  </div>  
-                </div>
+                 </div>
               </div>
-            </div>
-          </div>
-        </div>
+             
+             </div>
+           </div>
+         </div>
+         
+      </div>
+
         <div class="modal-footer">
-          <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
-          <button type="button" class="btn btn-primary"> Next &nbsp;<i class="fa fa-arrow-right">&nbsp;</i></button>
+          <button type="button" class="btn btn-primary" id="next" disabled> Next &nbsp;<i class="fa fa-arrow-right">&nbsp;</i></button>
         </div>
       </div>
     </div>
@@ -914,7 +891,7 @@
 
 <div class="row">
   <div class="col-12">
-    <button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal4">
+    <button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal1">
       Cost Button
     </button>
   </div>
