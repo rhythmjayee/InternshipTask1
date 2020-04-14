@@ -29,15 +29,14 @@ $(function () {
       'data-target':"#modal2",
       'data-dismiss':"modal"
     });
+    $('#modal1-done').addClass("d-none");
+    $('#next1').removeClass("d-none")
   });
 
   $('#free').on('click',function(){
-    $('#next1').removeAttr("disabled");
-    $('#next1').attr({
-      'data-toggle':"modal" ,
-      'data-target':"",
-      'data-dismiss':"modal"
-    });
+    $('#next1').addClass("d-none");
+    $('#modal1-done').removeClass('d-none');
+    
   });
 
   $('#single').on('click',function(){
