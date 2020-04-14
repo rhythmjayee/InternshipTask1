@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <link rel="stylesheet" href="css/styles.css">
+ 
 
 </head>
 
@@ -242,77 +243,93 @@
             </div>
             
             <div class="col-5 ml-auto d-flex justify-content-end"  >
-              <button class="btn btn-outline-primary"><i class="fa fa-plus"></i> Category</button>
+              <button class="btn btn-outline-primary" id="category" ><i class="fa fa-plus"></i> Category</button>
             </div>
           </div>
          </div>
         <div class="modal-body  ">
 
-        <!-- <div class="row">
-          <div class="col-10">
-            <div id="accordion">
-              <div class="card">
-                <div class="card-header" id="headingOne">
-                  <h5 class="mb-0">
-                    
-                  </h5>
-                </div>
-          </div>
-        </div>
-          </div>
-          <div class="col-1">
-            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              <i class="fa fa-arrow-down"></i>
-            </button>
-          </div>
-            </div> -->
-            <!-- <div> -->
-              <!-- <ol>
-                <li class="mt-5"> -->
-                  <!-- <div class="row">
-                    <div class="col-12">
-                      <p class="font-weight-bold">1</p>
-                    </div>
-                  </div> -->
-                  <div class="row">
-                    <div class="col-12">
+                      <form class="needs-validation" novalidate id="list" >
+                           <div id="accordion" >
 
-                      <form class="needs-validation" novalidate>
-                           <ul>
-                             <l1>
-                               <div>
-                                 <span>1.</span>
-                                <div class="card" style="width:20em;">
-                                  <div class="card-body">
-                                    <div class="form-group">
-                                      <label for="Category">Category?</label>
-                                      <input type="text" class="form-control" id="Category"  placeholder="Example:Entry,food etc">
+                            <div class="row" id="r1">
+                              <div class="col-1">
+                                <span>1.</span>
+                              </div>
+
+                              <div class="col-10">
+
+                                <div class="card"  style="width:20em;">
+                             
+                                  <div class="card-header" id="h1">
+                                      <div class="row">
+                                        <div class="col-10">
+                                          <div class="d-flex justify-content-start mr-auto">
+                                            <h6><span id="s1"></span></h6>
+                                           </div>
+                                        </div>
+                                        <div class="col-1 d-none " id="b1">
+                                          <button type="button"  class="btn btn-light  ml-auto d-flex" data-toggle="collapse" data-target="#c1" aria-expanded="true" aria-controls="collapseOne">
+                                            <i class="fa fa-arrow-down"></i>
+                                           </button>
+                                        </div>
+                                      </div>
+
+                                  
+                                  </div>
+                              
+                                  <div id="c1"class="collapse show" aria-labelledby="h1" data-parent="#accordion">
+                                    <div class="card-body">
                                       
-                                    </div>
-                                    <div class="form-group">
-                                      <label for="Description">Description</label>
-                                      <input type="text" class="form-control" id="Description" placeholder="Description">
-                                    </div>
-                                      <div class="form-group">
+                                          <div class="form-group">
+                                            <div class="row">
+                                              <div class="col-10">
+                                                <label for="Category1">Category?</label>
+                                                <input type="text" class="form-control" id="Category1" style="width: 15em;" placeholder="Example:Entry,food etc">
+                                              </div>
+                                              <div class="col-1  d-none"id="bb1">
+                                                <button role="button"  class=" btn btn-light"><i class="fa fa-minus"></i></button>
+                                              </div>
+                                            </div>
+                                            
+                                            </div>
+                                          <div class="form-group">
+                                            <label for="Description1">Description</label>
+                                            <input type="text" class="form-control" id="Description1" style="width: 15em;"placeholder="Description">
+                                          </div>
+                                            <div class="form-group">
+                                              <label for="p1">Price of ticket?</label>
+                                                <input type="number" class="form-control" style="width: 15em;" id="p1" placeholder="Price per ticket"  required>
+                                               </div>
                                         
-                                          <label for="validationprice">Price of ticket?</label>
-                                          <input type="number" class="form-control" style="width: 200px;" id="validationprice" placeholder="Price per ticket"  required>
+                                     
                                          
                                         </div>
-                                   
                                     </div>
-                                </div>
-                               </div>
+    
+    
+                                  </div>
+
+                              </div>
+                            </div>
+
+                        
+                            
+                           
+                            </div>
                               
-                             </l1>
-                           </ul>
+                          
+                               
+                              
+                             
+                           </div>
                         
                        
 
 
                             <div class="modal-footer">
                               <div class="d-flex ustify-content-start mr-auto">
-                                <h6>Total Cost: </h6> &nbsp;<span> 0</span>
+                                <h6>Total Cost:&nbsp;<span id="totalCost">0</span> </h6> 
                               </div>
                               
                              
@@ -321,12 +338,9 @@
                         </form>
 
                      
-                    </div>
-                  </div>
+                   
                   
-                <!-- </li> -->
-              <!-- </ol> -->
-            <!-- </div> -->
+               
             
 
 
@@ -334,21 +348,14 @@
         
           </div>
 
-        <!-- <div class="modal-footer">
-          <div class="d-flex ustify-content-start mr-auto">
-            <h6>Total Cost: </h6> &nbsp;<span> 0</span>
-          </div>
-          
-         
-           <button type="submit" class="btn btn-success "  data-dismiss="modal">Done &nbsp;<i class="fa fa-thumbs-up">&nbsp;</i></button>
-         </div> -->
+       
          
           
         </div>
       </div>
-    </div>
+    <!-- </div>
   </div>
-  
+   -->
 
 
 
@@ -778,6 +785,15 @@
             </div>
           </div>
         </div>
+        <hr>
+        <br>
+        <div class="row mb-5">
+          <div class="col-sm-12  d-block d-md-none">
+            <button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal1">
+              Cost Button
+            </button>
+          </div>
+        </div>
 
 
       </div>
@@ -891,7 +907,7 @@
 </div>
 
 <div class="row">
-  <div class="col-12">
+  <div class="col-12 d-none d-md-block">
     <button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal1">
       Cost Button
     </button>
