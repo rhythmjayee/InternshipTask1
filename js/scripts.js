@@ -57,3 +57,10 @@ $(function () {
       'data-dismiss':"modal"
     });
   });
+
+  $('#online').on('click',function(){
+    $('offline').removeAttr("required");
+  });
+  $('#offnline').on('click',function(){
+    $('#online').removeAttr("required");
+  });
