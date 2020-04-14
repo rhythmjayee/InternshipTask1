@@ -23,8 +23,8 @@ $(function () {
 
 
   $('#paid').on('click',function(){
-    $('#next').removeAttr("disabled");
-    $('#next').attr({
+    $('#next1').removeAttr("disabled");
+    $('#next1').attr({
       'data-toggle':"modal" ,
       'data-target':"#modal2",
       'data-dismiss':"modal"
@@ -32,10 +32,28 @@ $(function () {
   });
 
   $('#free').on('click',function(){
-    $('#next').removeAttr("disabled");
-    $('#next').attr({
+    $('#next1').removeAttr("disabled");
+    $('#next1').attr({
       'data-toggle':"modal" ,
-      'data-target':"#modal2",
+      'data-target':"",
+      'data-dismiss':"modal"
+    });
+  });
+
+  $('#single').on('click',function(){
+    $('#next2').removeAttr("disabled");
+    $('#next2').attr({
+      'data-toggle':"modal" ,
+      'data-target':"#modal3",
+      'data-dismiss':"modal"
+    });
+  });
+
+  $('#multiple').on('click',function(){
+    $('#next2').removeAttr("disabled");
+    $('#next2').attr({
+      'data-toggle':"modal" ,
+      'data-target':"#modal4",
       'data-dismiss':"modal"
     });
   });

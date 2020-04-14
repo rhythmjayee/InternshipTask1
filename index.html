@@ -33,6 +33,7 @@
           </div>
          </div>
         <div class="modal-body ">
+          <div class="container">
           <div class="row">
             <div class="col-12 mb-2">
               <h6>Paid-event or Free-event?</h6>
@@ -40,7 +41,7 @@
           </div>
       
 
-         <div class="container">
+         
            <div class="row">
              <div class="col-6 ">
               
@@ -70,12 +71,14 @@
              
              </div>
            </div>
+
          </div>
+        </div>
          
-      </div>
+      
 
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary" id="next" disabled> Next &nbsp;<i class="fa fa-arrow-right">&nbsp;</i></button>
+          <button type="button" class="btn btn-primary" id="next1" disabled> Next &nbsp;<i class="fa fa-arrow-right">&nbsp;</i></button>
         </div>
       </div>
     </div>
@@ -88,24 +91,25 @@
       <div class="modal-content">
         <div class="modal-header">
           <div class="row">
-            <div class=" ml-3 col-1">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
+            <div class="  col-1">
+              <button type="button" class="btn btn-light" data-dismiss="modal" data-toggle="modal" data-target="#modal1" aria-label="Close">
+                <span class="fa fa-arrow-left"></span>
               </button>
             </div>
-            <div class="col-8 ">
+            <div class="col-8 ml-2 mt-1">
               <h5 class="modal-title">Paid Event</h5>
             </div>
           </div>
          </div>
         <div class="modal-body ">
+          <div class="container">
           <div class="row">
             <div class="col-12 mb-2">
               <h6>Single-cost event or multiple-cost event? &nbsp;<i class="fa fa-info " id="paidEventToolTip" data-toggle="tooltip" data-placement="top" title="this is a tooltip" ></i></h6>
             </div>
           </div>
           
-          <div class="row">
+          <!-- <div class="row">
             <div class="col-6">
               <div class="card" style="width: 10rem;">
                 <div class="card-body">
@@ -160,11 +164,56 @@
                 </div>
               </div>
             </div>
+          </div> -->
+
+
+          <div class="row">
+            <div class="col-6 ">
+             
+             <div class="card" style="width: 10rem;">
+               <div class="card-body">
+                 <h5 class="card-title"> <i class="fa fa-ticket"></i></h5>
+                 <div class="custom-control custom-radio custom-control-inline">
+                   <!-- <i class="fa fa-money"></i> -->
+                   <input type="radio" id="single" name="customRadioInline1" class="custom-control-input">
+                   <label class="custom-control-label" for="single">Single-cost</label>
+                 </div>
+                </div>
+             </div>
+
+             
+            </div>
+            <div class="col-6 " >
+             <div class="card" style="width: 10rem;">
+               <div class="card-body">
+                 <h5 class="card-title"> <i class="fa fa-ticket"></i></h5>
+                 <div class="custom-control custom-radio custom-control-inline">
+                   <input type="radio" id="multiple" name="customRadioInline1" class="custom-control-input">
+                   <label class="custom-control-label" for="multiple">Multiple-cost</label>
+                 </div>
+                </div>
+             </div>
+            
+            </div>
           </div>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
         </div>
         <div class="modal-footer">
-          <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
-          <button type="button" class="btn btn-primary"> Next &nbsp;<i class="fa fa-arrow-right">&nbsp;</i></button>
+         
+          <button type="button" id="next2" class="btn btn-primary" disabled> Next &nbsp;<i class="fa fa-arrow-right">&nbsp;</i></button>
         </div>
       </div>
     </div>
