@@ -116,9 +116,14 @@ $(function () {
           var UpDown='#b'+(count)+' button i';
         $(UpDown).toggleClass('fa-arrow-down fa-arrow-up');
         e.preventDefault();
+         
       });
       
-      
+      // $('#b'+count).on('click',function(){
+      //   var UpDown='#b'+(count)+' button i';
+      //   $(UpDown).toggleClass('fa-arrow-down fa-arrow-up');
+      //   e.preventDefault();
+      // })
       
 
   });
@@ -130,6 +135,12 @@ $(function () {
 
 //problem with total cost 
 //solved lol...
+
+
+// $('#b1').on('click',function(){
+//   $('#b1 button i').toggleClass('fa-arrow-down fa-arrow-up');
+//   e.preventDefault();
+// })
 
 
 
@@ -156,7 +167,8 @@ $("#c1").on('hidden.bs.collapse',function(){
 $("#c1").on('shown.bs.collapse',function(){
     $('#s1').addClass('d-none');
     $('#b1 button i').toggleClass('fa-arrow-down fa-arrow-up');
-  e.preventDefault();
+    e.preventDefault();
+   
 });
 
 
