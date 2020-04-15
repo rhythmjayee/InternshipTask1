@@ -66,7 +66,7 @@ $(function () {
 
   // var Total=$('#validationprice').val();
   var count=1;
-  var remove=['b11'];
+  // var remove=['b11'];
   // var totalArr=[];
   var total=0;
 
@@ -112,7 +112,13 @@ $(function () {
           $('#s'+count).addClass('d-none');
       });
       
-     
+      $('#b'+count).on('click',function(){
+        var UpDown='#b'+(count)+' button i';
+        $(UpDown).toggleClass('fa-arrow-down fa-arrow-up');
+        e.preventDefault();
+       
+      });
+      
 
   });
 
@@ -122,7 +128,12 @@ $(function () {
 
 
 //problem with total cost
-
+$('#b1').on('click',function(){
+ 
+  $('#b1 button i').toggleClass('fa-arrow-down fa-arrow-up');
+  e.preventDefault();
+ 
+});
 
 
 
