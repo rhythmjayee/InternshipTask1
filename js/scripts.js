@@ -126,13 +126,7 @@ $(function () {
 
 
 
-$("#bb1").on('click',function(){
-  var price=$('#p1').val();
-  total=Number(total)-Number(price);
-  $('#totalCost').text(total);
-  $("#r1").remove();
-  
-});
+
 
 $("#c1").on('hidden.bs.collapse',function(){
   var title=$('#Category1').val();
@@ -142,14 +136,23 @@ $("#c1").on('hidden.bs.collapse',function(){
   $('#s1').removeClass('d-none');
     $('#s1').text(title+':'+price);
 });
+
 $("#c1").on('shown.bs.collapse',function(){
     $('#s1').addClass('d-none');
 });
 
-$('#p1').on('change',function(){
+
+$('#p1').on('input',function(){
   
   var price=$('#p1').val();
   total=Number(total)+Number(price);
   $('#totalCost').text(total);
 });
 
+$("#bb1").on('click',function(){
+  var price=$('#p1').val();
+  total=Number(total)-Number(price);
+  $('#totalCost').text(total);
+  $("#r1").remove();
+  
+});

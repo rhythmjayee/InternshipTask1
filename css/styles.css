@@ -122,3 +122,15 @@ width: 18em;
   padding: 30px 30px 30px 30px;
   margin-left: 50px;
 }
+
+
+/* Important part */
+/* .modal-dialog{
+  overflow-y: initial ;
+}
+.modal-body{
+  padding: 30px 30px 30px 30px;
+  margin-left: 50px;
+  
+  overflow-y: auto;
+} */
