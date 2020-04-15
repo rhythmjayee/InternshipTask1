@@ -101,7 +101,7 @@ $(function () {
       $("#c"+count).on('hidden.bs.collapse',function(){
         var title=$('#Category'+count).val();
         var price=$('#p'+count).val();
-        total=Number(total)+Number(price);
+        // total=Number(total)+Number(price);
         
         $('#s'+count).removeClass('d-none');
           $('#s'+count).text(title+':'+price);
@@ -128,7 +128,8 @@ $(function () {
 
 
 
-//problem with total cost
+//problem with total cost 
+//solved lol...
 
 
 
@@ -139,17 +140,12 @@ $(function () {
 
 
 
-// $('#b1').on('click',function(){
- 
-//   $('#b1 button i').toggleClass('fa-arrow-down fa-arrow-up');
-//   e.preventDefault();
- 
-// });
+
 
 $("#c1").on('hidden.bs.collapse',function(){
   var title=$('#Category1').val();
   var price=$('#p1').val();
-  total=Number(total)+Number(price);
+  // total=Number(total)+Number(price);
   
   $('#s1').removeClass('d-none');
     $('#s1').text(title+':'+price);
@@ -164,8 +160,7 @@ $("#c1").on('shown.bs.collapse',function(){
 });
 
 
-$('#p1').on('input',function(){
-  
+$('#p1').on('change',function(){
   var price=$('#p1').val();
   total=Number(total)+Number(price);
   $('#totalCost').text(total);
